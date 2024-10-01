@@ -1,0 +1,215 @@
+body {
+    margin: 0 auto;
+    font-family: Raleway;
+    
+  }
+ 
+  h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 40px;
+    
+  }
+  .recipe-header {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 120px;
+    gap: 24px;
+    max-width: 1440px;
+    margin: 0 auto;
+    
+  }
+  .recipe-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .recipe-details {
+    display: flex;
+    gap: 24px;
+    max-width: 1440px;
+   
+  }
+  .recipe-time {
+    display: flex;
+    align-items: center;
+    background-color: #efefef;
+    border-radius: 12px;
+    gap: 4px;
+    padding: 5px 8px;
+    font-size: 16px;
+  }
+  .recipe-time img {
+    width: 16px;
+  }
+  .ingredients-section {
+    padding: 0 120px;
+    gap: 16px;
+    max-width: 1440px;
+    margin: 0 auto;
+   
+  }
+  .divider {
+    background-color: green;
+    height: 1px;
+    margin-bottom: 20px;
+  }
+  input {
+    margin-left: 16px;
+    height: 28px;
+    max-width: 200px;
+    border: 1px solid #efefef;
+    border-radius: 8px 0px 0px 8px;
+    border-color: #008000;
+  }
+  .Portionen-button {
+    background-color: #008000;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    max-width: 200px;
+  }
+
+  .ingredients-list{
+    list-style-type: none;
+    padding: 20px 0px;
+    margin: 0;
+  }
+
+  .ingredients-list li {
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  .ingredients-list li:nth-child(odd) {
+    background-color: #efefef;
+  }
+  .preparation-section {
+    padding: 0 120px;
+    gap: 16px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .preparation-steps {
+    padding: 24px 0;
+  }
+  .author-profile {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 25px;
+  }
+  .author-profile img {
+    width: 100px;
+    border-radius: 90px;
+  }
+  .author-profile span{
+    font-size: 24px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 12px;
+    background-color: black;
+  
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-color:#EFEFEF; 
+  }
+  ::-webkit-scrollbar-thumb:hover{
+   background-color:#f5f3f3 ; 
+  }
+  @font-face{
+    src: url(./fronts/Raleway-Regular.ttf);
+    font-family:Raleway;
+    
+  }
+  @media (max-width: 1050px) {
+   
+  }
+  @media (max-width: 980px) {
+    .recipe-header {
+      padding: 40px 100px;
+    }
+    .ingredients-section{
+      padding: 0 100px;
+    }
+    .preparation-section {
+      padding: 0 100px;
+      gap: 16px;
+    }
+  
+  
+  }
+  @media (max-width: 880px) {
+    .recipe-header {
+      padding: 20px 80px;
+    }
+    .recipe-details {
+      gap: 16px;
+    }
+    .recipe-time {
+      gap: 4px;
+      padding: 5px 8px;
+      font-size: 16px;
+    }
+    .ingredients-section{
+      padding: 20px 80px;
+    }
+    .preparation-section {
+      padding: 0 80px;
+      gap: 12px;
+    }
+
+  }
+  @media (max-width: 780px) {
+    .recipe-header {
+      padding: 10px 60px;
+    }
+    .recipe-details {
+      gap: 10px;
+    }
+    .recipe-time {
+      gap: 2px;
+      padding: 2px 4px;
+      font-size: 12px;
+    }
+    .ingredients-section{
+      padding: 10px 60px;
+    }
+    input{
+      max-width: 80px;
+    }
+    .preparation-section {
+      padding: 0 60px;
+      gap: 8px;
+    }
+  
+  }
+  @media (max-width: 500px) {
+    .recipe-header {
+      padding: 10px 30px;
+    }
+    h1{
+      font-size: 32px;
+    }
+    h2{
+      font-size: 20px;
+    }
+    .ingredients-section{
+      padding: 10px 30px;
+    }
+    input{
+      max-width: 60px;
+      margin-left: 8px;
+    } 
+     .Portionen-button {
+      padding: 8px 8px;
+      
+    }
+    .preparation-section {
+      padding: 0 30px;
+      gap: 6px;
+    }
+  }

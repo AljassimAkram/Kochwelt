@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="./img/logo_small.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum</title>
+    <script src="./script/templates.js"></script>
+    <script src="./script/menu.js"></script>
+</head>
+<style>
+    body{
+        margin: 0 auto;
+    }
+    .impressum{
+        font-family: Raleway;
+        margin: 0 auto;
+        padding: 50px 120px;
+        max-width: 1440px;
+    }
+    @font-face {
+      src: url(./style/fronts/Raleway-Regular.ttf);
+      font-family: Raleway;
+    }
+    ::-webkit-scrollbar {
+       width: 12px;
+       background-color: black;
+
+    }
+    ::-webkit-scrollbar-thumb{
+       background-color:#EFEFEF; 
+    }
+    ::-webkit-scrollbar-thumb:hover{
+       background-color:#f5f3f3 ; 
+    }
+    @media (max-width: 980px) {
+       .impressum {
+          padding: 40px 100px;
+        }
+    }
+    @media (max-width: 880px) {
+        .impressum {
+           padding: 30px 80px;
+        }
+    }
+    @media (max-width: 780px) {
+       .impressum {
+           padding: 20px 60px;
+    
+        }
+  
+    }
+    @media (max-width: 500px) {
+        .impressum {
+            padding: 10px 30px;
+        }
+    }
+
+
+
+</style>
+<body onload="includeHTML()">
+    <header w3-include-html="header.html"></header>
+    <div class='impressum'><h1>Impressum</h1><p>Angaben gemäß § 5 TMG</p><p>Akram Muster <br> 
+        Musterweg<br> 
+        12345 Musterstadt <br> 
+        <br>
+        <br>
+        </p><p> <strong>Vertreten durch: </strong><br>
+        Akram Muster<br>
+        Christian Muster<br>
+        Marc Muster<br>
+        <br>
+        <br>
+        </p><p><strong>Kontakt:</strong> <br>
+        Telefon: 01234-789456<br>
+        Fax: 1234-56789<br>
+        E-Mail: <a href='mailto:max@muster.de'>max@muster.de</a></br></p><p><strong>Umsatzsteuer-ID: </strong> <br>
+            <br>
+            <br>
+        Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: Musterustid.<br><br>
+        <strong>Wirtschafts-ID: </strong><br>
+        Musterwirtschaftsid<br>
+        </p><p><strong>Aufsichtsbehörde:</strong><br>
+        Musteraufsicht Musterstadt<br></p><br>
+        <br>
+        <br> 
+        Impressum vom <a href="https://www.impressum-generator.de">Impressum Generator</a> der <a href="https://www.kanzlei-hasselbach.de/">Kanzlei Hasselbach, Rechtsanwälte für Arbeitsrecht und Familienrecht</a>
+         </div>
+    <footer w3-include-html="footer.html">
+
+    </footer>
+</body>
+</html>

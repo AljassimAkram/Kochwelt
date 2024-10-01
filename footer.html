@@ -1,0 +1,128 @@
+<footer class="footer">
+  <div class="footer-wrapper">
+    <div>
+      <a href="./landingpage.html"
+        ><img class="logo-kochwelt" src="./img/logo.png" alt="Logo-kochwelt" />
+      </a>
+      <a href="./landingpage.html"
+        ><img
+          class="logo-small-kochwelt"
+          src="./img/logo_small.png"
+          alt="logo_kochwelt"
+      /></a>
+    </div>
+
+    <div class="footer_right">
+      <div class="footer_logo">
+        <a href="https://www.tripadvisor.de/"
+          ><img
+            class="contact"
+            src="./img/tripadvisor_logo.png"
+            alt="TripAdvisor"
+        /></a>
+        <a href="https://www.facebook.com"
+          ><img class="contact" src="./img/facebook_logo.png" alt="Facebook"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img class="contact" src="./img/instagrram_logo.png" alt="Instagram"
+        /></a>
+      </div>
+      <div class="datenschtuz">
+        <a class="datenschtuz" href="./impressum.html">Impressum</a>
+        <a class="datenschtuz" href="./datenschutz.html">Datenschtuz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<style>
+
+   @font-face{
+    src: url(./fronts/Raleway-Regular.ttf);
+    font-family:Raleway;
+   }
+  .footer {
+    background-color: #403B3B;
+    font-family:Raleway;
+    margin-top: auto;
+  }
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 144px;
+    padding: 0 120px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .logo-kochwelt {
+    height: 80px;
+  }
+  .logo-small-kochwelt {
+    display: none;
+  }
+  .footer_logo {
+    display: flex;
+    justify-content: space-around;
+    gap: 32px;
+  }
+
+  .contact {
+    height: 40px;
+    width: 40px;
+  }
+
+  .contact:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  .datenschtuz {
+    display: flex;
+    align-self: self-end;
+    gap: 16px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .datenschtuz:hover {
+    color: #008000;
+  }
+  @media (max-width: 980px) {
+    .footer-wrapper {
+      padding: 0 100px;
+    }
+    .logo-kochwelt {
+      height: 60px;
+    }
+  }
+  @media (max-width: 880px) {
+    .footer-wrapper {
+      padding: 0 80px;
+    }
+    .logo-kochwelt {
+      display: none;
+    }
+    .logo-small-kochwelt {
+      display: block;
+      height: 60px;
+    }
+  }
+  @media (max-width: 780px) {
+    .footer-wrapper {
+      padding: 0 60px;
+    }
+
+    .footer_logo {
+      gap: 8px;
+    }
+    .datenschtuz {
+      display: block;
+    }
+  }
+  @media (max-width: 500px) {
+    .footer-wrapper {
+      padding: 0 30px;
+    }
+  }
+</style>

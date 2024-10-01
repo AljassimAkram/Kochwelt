@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="./img/logo_small.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <script src="./script/templates.js"></script>
+    <script src="./script/menu.js"></script>
+    <link rel="stylesheet" href="./style/contact.css" />
+  </head>
+  <body onload="includeHTML()">
+    <header w3-include-html="./header.html"></header>
+    <section>
+      <div class="mail-logo"><img src="./img/mail.png" alt="mail" /></div>
+      <div class="content-form">
+        <h1>Kontaktieren Sie uns:</h1>
+        <form id="contactForm">
+          <input
+            class="input-form"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+          />
+          <br />
+          <input
+            class="input-form"
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="example@emil.com"
+          />
+          <br />
+          <input
+            class="input-form"
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="Telefon-Nr. "
+          />
+          <br />
+          <textarea
+            class="input-nachricht"
+            name="nachricht"
+            id="nachricht"
+            required
+            placeholder="Ihre Nachricht"
+          ></textarea>
+          <br />
+          <button class="button" type="submit" onclick="validateForm()">Versenden</button>
+        </form>
+        
+      </div>
+    </section>
+    <footer w3-include-html="footer.html"></footer>
+    <script>
+      function validateForm() {
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let tel = document.getElementById("tel").value;
+        let nachricht = document.getElementById("nachricht").value;
+        let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        let telPattern = /^[0-9-+\s()]*$/;
+      
+        
+        if (name === "" || email === "" || nachricht === ""||!emailPattern.test(email)||tel !== "" && !telPattern.test(tel)) {
+          document.getElementById('contactForm').innerHTML = `<div>Bitte füllen Sie alle Felder richtig aus</div><button onclick="window.location.reload()">Zurück</button>`;
+        }
+        else{
+          document.getElementById('contactForm').innerHTML = `<div>Danke für Ihre Nachricht!</div><button onclick="window.location.reload()">Zurück</button>`;
+        }
+      }
+    </script>
+  </body>
+</html>

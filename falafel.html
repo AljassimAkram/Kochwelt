@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="./img/logo_small.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezept des Tages</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./script/script.js"></script>
+    <script src="./script/templates.js"></script>
+    <script src="./script/menu.js"></script>
+  </head>
+
+  <body onload="includeHTML(), show()">
+    <header w3-include-html="header.html"></header>
+    <section class="recipe-header">
+      <div><h1>Falafel</h1></div>
+      <div class="recipe-image">
+        <img src="./img/falafel.jpg" alt="falafel" />
+      </div>
+      <div class="recipe-details">
+        <div class="recipe-time">
+          <img src="./img/icons/clock-regular.svg" alt="clock-regular" /> 30 Min
+        </div>
+        <div class="recipe-time">
+          <img src="./img/icons/brain-solid.svg" alt="brain-solid" />simple
+        </div>
+        <div class="recipe-time">
+          <img
+            src="./img/icons/calendar-alt-regular.svg"
+            alt="calendar-alt-regular"
+          />
+          06.06.2024
+        </div>
+      </div>
+    </section>
+    <section class="ingredients-section">
+      <div class="divider"></div>
+      <div>
+        Zutaten für <input type="number" placeholder="1-10" id="input" /><button
+          class="Portionen-button"
+          onclick="addition()"
+        >
+          Portionen
+        </button>
+      </div>
+      <div>
+        <ul class="ingredients-list" id="liste"></ul>
+      </div>
+    </section>
+    <section class="preparation-section">
+      <h2>Zubereitung</h2>
+      <div class="recipe-details">
+        <div class="recipe-time">
+          <img src="./img/icons/clock-regular.svg" alt="clock-regular" />ca.15
+          Min
+        </div>
+        <div class="recipe-time">
+          <img
+            src="./img/icons/clock-regular.svg"
+            alt="clock-regular"
+          />Gesamtzeit ca.30 Min
+        </div>
+      </div>
+      <div class="preparation-steps">
+        <span
+          >Kichererbsen einweichen: Über Nacht einweichen, mindestens 12
+          Stunden. Abtropfen lassen: Kichererbsen gut abtropfen lassen und
+          abspülen. Masse vorbereiten: Kichererbsen, Zwiebel, Knoblauch,
+          Petersilie, Gewürze, Salz und Pfeffer in einer Küchenmaschine zu einer
+          groben Masse verarbeiten. Binden: Backpulver und Mehl zur Masse geben,
+          bis sie formbar ist. Formen: Kleine Bällchen oder Patties formen.
+          Frittieren: In heißem Öl (ca. 180°C) 3-5 Minuten goldbraun und
+          knusprig frittieren. Auf Küchenpapier abtropfen lassen. Servieren:
+          Warm mit Tahini-Sauce, Hummus und frischem Gemüse servieren.<br />
+          Guten Appetit!!</span
+        >
+      </div>
+
+      <h2>Rezept erstellt von</h2>
+      <div class="author-profile">
+        <img src="./img/profile.jpg" alt="profile" />
+        <span>Akram</span>
+      </div>
+    </section>
+    <footer w3-include-html="footer.html"></footer>
+  </body>
+</html>

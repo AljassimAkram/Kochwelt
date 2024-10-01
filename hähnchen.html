@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="./img/logo_small.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezept des Tages</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./script/templates.js"></script>
+    <script src="./script/menu.js"></script>
+    <script src="./script/script_hähnchen.js"></script>
+  </head>
+
+  <body onload="includeHTML(),show()">
+    <header w3-include-html="header.html"></header>
+    <section class="recipe-header">
+      <div><h1>Hähnchen Curry aus dem Wok</h1></div>
+      <div class="recipe-image">
+        <img src="./img/Hähnchen_Wok.jpg" alt="Hähnchen_Wok" />
+      </div>
+      <div class="recipe-details">
+        <div class="recipe-time">
+          <img src="./img/icons/clock-regular.svg" alt="clock-regular" /> 20 Min
+        </div>
+        <div class="recipe-time">
+          <img src="./img/icons/brain-solid.svg" alt="brain-solid" />simple
+        </div>
+        <div class="recipe-time">
+          <img
+            src="./img/icons/calendar-alt-regular.svg"
+            alt="calendar-alt-regular"
+          />
+          03.06.2024
+        </div>
+      </div>
+    </section>
+    <section class="ingredients-section">
+      <div class="divider"></div>
+      <div>
+        Zutaten für <input type="number" id="input" placeholder="1-10"/><button
+          class="Portionen-button"
+          onclick="addition()"
+        >
+          Portionen
+        </button>
+      </div>
+      <div>
+        <ul class="ingredients-list" id="liste"></ul>
+      </div>
+      <div class="ingredients-list">
+        <table id="table"></table>
+      </div>  
+    </section>
+    <section class="preparation-section">
+      <h2>Zubereitung</h2>
+      <div class="recipe-details">
+        <div class="recipe-time">
+          <img src="./img/icons/clock-regular.svg" alt="clock-regular" />ca.20
+          Min
+        </div>
+        <div class="recipe-time">
+          <img
+            src="./img/icons/clock-regular.svg"
+            alt="clock-regular"
+          />Gesamtzeit ca.35 Min
+        </div>
+      </div>
+      <div class="preparation-steps">
+        <span
+          >Zubereitung: <br />
+          Hähnchenbrustfilet kleinschneiden, im Wok mit etwas Sesamöl anbraten und
+          mit Pfeffer, gelbem Curry, Chili und Paprika würzen. <br />
+          Anschließend Kokosmilch und roten Curry hinzugeben. <br />
+          Das Gemüse klein schneiden und zeitversetzt in der Reihenfolge Möhren,
+          Brokoli, Paprika, Zuchini und Champignons hinzugeben.<br /></span
+        >
+      </div>
+
+      <h2>Rezept erstellt von</h2>
+      <div class="author-profile">
+        <img src="./img/profile.png" alt="profile" />
+        <span>Christain</span>
+      </div>
+    </section>
+    <footer w3-include-html="footer.html"></footer>
+  </body>
+</html>

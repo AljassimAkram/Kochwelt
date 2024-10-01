@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="./img/logo_small.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezept des Tages</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./script/templates.js"></script>
+    <script src="./script/menu.js"></script>
+    <script src="./script/script_fregula.js"></script>
+  </head>
+
+  <body onload="includeHTML(),show()">
+    <header w3-include-html="header.html"></header>
+    <section class="recipe-header">
+      <div><h1>Fregula Sarda</h1></div>
+      <div class="recipe-image">
+        <img src="./img/fregula.jpg" alt="fregula" />
+      </div>
+      <div class="recipe-details">
+        <div class="recipe-time">
+          <img src="./img/icons/clock-regular.svg" alt="clock-regular" /> 20 Min
+        </div>
+        <div class="recipe-time">
+          <img src="./img/icons/brain-solid.svg" alt="brain-solid" />simple
+        </div>
+        <div class="recipe-time">
+          <img
+            src="./img/icons/calendar-alt-regular.svg"
+            alt="calendar-alt-regular"
+          />
+          03.06.2024
+        </div>
+      </div>
+    </section>
+    <section class="ingredients-section">
+      <div class="divider"></div>
+      <div>
+        Zutaten für <input type="number" id="input" placeholder="1-10"/><button
+          class="Portionen-button"
+          onclick="addition()"
+        >
+          Portionen
+        </button>
+      </div>
+      <div>
+        <ul class="ingredients-list" id="liste"></ul>
+      </div>
+      <div class="ingredients-list">
+        <table id="table"></table>
+      </div>  
+    </section>
+    <section class="preparation-section">
+      <h2>Zubereitung</h2>
+      <div class="recipe-details">
+        <div class="recipe-time">
+          <img src="./img/icons/clock-regular.svg" alt="clock-regular" />ca.20
+          Min
+        </div>
+        <div class="recipe-time">
+          <img
+            src="./img/icons/clock-regular.svg"
+            alt="clock-regular"
+          />Gesamtzeit ca.35 Min
+        </div>
+      </div>
+      <div class="preparation-steps">
+        <span>
+          <b>Vorbereitung:</b> <br />
+          Zucchini und Karotte waschen und in kleine Würfel schneiden. Die
+          Zwiebel und Knoblauchzehe schälen und fein hacken. Kirschtomaten
+          halbieren.<br />
+          <br />
+          <b> Anbraten:</b> <br />
+          Das Olivenöl in einer Pfanne erhitzen. Zwiebel und Knoblauch darin bei
+          mittlerer Hitze glasig dünsten.<br />
+          <br />
+          <b> Gemüse hinzufügen:</b> <br />
+          Zucchini- und Karottenwürfel hinzufügen und etwa 5 Minuten
+          mitdünsten.<br /><br />
+          <b> Fregula Sarda kochen:</b>
+          <br />
+          Fregula Sarda in die Pfanne geben und kurz mitrösten. Mit der
+          Gemüsebrühe ablöschen und bei geringer Hitze etwa 15 Minuten köcheln
+          lassen, bis die Fregula al dente ist. Dabei gelegentlich umrühren.<br /><br />
+          <b>Finalisieren:</b><br />
+
+          Kirschtomaten hinzufügen und kurz mitwärmen. Mit Salz und Pfeffer
+          abschmecken.<br />
+          <br />
+          <b>Servieren:</b> <br />Die Fregula Sarda auf einem Teller anrichten.
+          Mit geriebenem Parmesan und frischen Basilikumblättern garnieren.
+          <br />Guten Appetit!
+        </span>
+      </div>
+
+      <h2>Rezept erstellt von</h2>
+      <div class="author-profile">
+        <img src="./img/profile.png" alt="profile" />
+        <span>Marc</span>
+      </div>
+    </section>
+    <footer w3-include-html="footer.html"></footer>
+  </body>
+</html>
